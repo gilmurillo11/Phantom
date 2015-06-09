@@ -1,0 +1,21 @@
+<%= form_for(@cucumber) do |f| %>
+
+    <div class="browser">
+      <%= f.label :browser %><br>
+      <%= f.text_field :browser %>
+    </div>
+
+    <div class="env">
+      <%= f.label :env %><br>
+      <%= f.text_field :env %>
+    </div>
+
+    <div class="tag">
+      <%= f.label :tag %><br>
+      <%= f.text_field :tag %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
